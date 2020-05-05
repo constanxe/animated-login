@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // animate
     $(".swap").click(function(){
-        $(".container").toggleClass("log-in");
+        $(".container").toggleClass("sign-up");
     });
 
     // add password matching validation

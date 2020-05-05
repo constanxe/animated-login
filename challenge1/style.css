@@ -48,12 +48,12 @@ body {
   transition: all 0.1s;
 }
 
-.log-in {
+.sign-up {
   opacity: 1;
   transition: 0.3s;
   transition-delay: 0.05s;
 }
-.sign-up {
+.log-in {
   /* position: absolute; */
   right: 100%;
   opacity: 0;
@@ -61,15 +61,14 @@ body {
   color: var(--primary-light);
 }
 
-.container.log-in .container-info { /* 1st */
+.container.sign-up .container-info { 
   left: 0;
 }
-.container.log-in .container-info .info-item.sign-up {
+.container.sign-up .container-info .info-item.log-in {
   left: 0;
   opacity: 1;
 }
-.container.log-in .container-info .info-item.log-in {
-  /* left: -100%; */
+.container.sign-up .container-info .info-item.sign-up {
   right: 0;
   opacity: 0;
   transition: 0.3s;
