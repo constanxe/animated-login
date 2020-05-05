@@ -3,14 +3,7 @@ $(document).ready(function() {
     // animate
     $(".swap").click(function(){
         $(".container").toggleClass("log-in");
-        if ( $(".container").hasClass("log-in") ) {
-            
-        } else {
-            
-        }
     });
-
-
 
     // add password matching validation
     // https://codepen.io/diegoleme/pen/surIK
