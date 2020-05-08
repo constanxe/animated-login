@@ -3,6 +3,7 @@
   --primary-light: #FFDCD4;
   --primary-dark: #E7AFA3;
   --secondary: #2F4456;    
+  --dark: black;
 }
 
 
@@ -170,6 +171,14 @@ input {
 
 @media (max-width: 500px) {
 
+#icon {
+  position: absolute;
+  top: 258px;
+  right: 33px;
+  width: 24px;
+  height: 24px;
+}
+
 .container {
   width: 300px;
   height: 500px;
@@ -177,9 +186,7 @@ input {
 }
 .container-info {
   display: none;
-}
-.container-form {
-  width: 40%;
+  transition: all 0.2s;
 }
 
 .container-form .form-item .info-item {
@@ -201,24 +208,44 @@ input {
   padding-left: 30px;
 }
 
-/* login */
-.form-item.login {
-  display: block;
+/* style */
+.info-item.log-in {
+  background-color: var(--primary-light);
+  color: var(--dark);
 }
-.container.sign-up .form-item.login {
-  display: none;
+.container.sign-up .info-item.sign-up {
+  background-color: var(--secondary);
+  color: var(--primary-dark);
+  opacity: 0.9;
 }
 
-/* signup */
+/* initial */
 .form-item.register {
   display: none;
 }
+
+/* transition */
+.container.sign-up .form-item.login { 
+  display: none;
+  /* animation-name: slide;
+  animation-duration: 0.2s;
+  animation-direction: reverse; */
+  /* animation: slide 0.2s; */
+}
 .container.sign-up .form-item.register {
   display: block;
+
+  /* animation: slide 0.2s; */
 }
-.container.sign-up .info-item.sign-up {
-  background-color: var(--primary-light);
-}
+/* 
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+} */
 
 
 }
