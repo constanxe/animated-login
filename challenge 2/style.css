@@ -94,6 +94,7 @@ body {
   display: inline-block;
   vertical-align: top;
   opacity: 1;
+  background-color: var(--basic);
 }
 .table {
   display: table;
@@ -179,12 +180,46 @@ input {
   width: 340px;
   height: 480px;
   top: 35%;
+  left: -340px;
+  
+  /* overflow: hidden;  */
 }
 .container-info {
   display: none;
   transition: all 0.2s;
 }
+.container-form {
+  width: 1020px;
+  height: 480px;
+  /* position: absolute; */
+  /* margin: 0;
+  padding: 0; */
+}
+.form-item {
+  display: inline-block;
+  /* float: left; */
+  width: 340px;
+}
 
+.container-form .form-item .info-item {
+  display: inline-block;
+  position: static;
+  left: 0;
+  top: 0px;
+  width: 340px;
+  height: 50%;
+  opacity: 1;
+  justify-content: left;
+  font-size: 90%;
+
+  transition: all 0.2s;
+}
+.table-cell {
+  text-align: left;
+  padding: 10px 30px;
+}
+
+/* cmpts */
 #icon {
   position: absolute;
   top: 258px;
@@ -196,30 +231,9 @@ input {
   text-align: left;
   padding-left: 30px;
 }
-.form-item {
-  width: 340px;
-}
 input {
   width: 250px;
 } 
-
-.container-form .form-item .info-item {
-  display: block;
-  position: static;
-  left: 0;
-  top: 0px;
-  width: 340px;
-  height: 50%;
-  opacity: 1;
-  justify-content: left;
-  font-size: 90%;
-
-  transition: all 0.1s;
-}
-.table-cell {
-  text-align: left;
-  padding: 10px 30px;
-}
 
 /* style */
 .info-item.log-in {
@@ -232,35 +246,34 @@ input {
   opacity: 0.9;
 }
 
-/* initial */
-/* .form-item.register { */
-.form-item.login {
-  display: none;
-}
 
 /* transition */
-/* .container.sign-up .form-item.login {  */
-.container.sign-up .form-item.register {
-  display: none;
-  /* animation-name: slide;
-  animation-duration: 0.2s;
-  animation-direction: reverse; */
-  /* animation: slide 0.2s; */
+.container .container-form {
+  transform: translateX(0);
+  transition: all 0.2s;
 }
-/* .container.sign-up .form-item.register { */
-.container.sign-up .form-item.login { 
-  display: block;
-  /* animation: slide 0.2s; */
+.container .container-form .form-item.register {
+  visibility: visible;
 }
-/* 
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-} */
+.container .container-form .form-item.login {
+  visibility: hidden;
+}
+.container .container-form .form-item.blank {
+  visibility: hidden;
+}
 
+.container.sign-up .container-form {
+  transform: translateX(340px);
+  transition: all 0.2s;
+}
+.container.sign-up .container-form .form-item.login {
+  visibility: visible;
+}
+.container.sign-up .container-form .form-item.register {
+  visibility: hidden;
+}
+.container.sign-up .container-form .form-item.blank {
+  visibility: hidden;
+}
 
 }
