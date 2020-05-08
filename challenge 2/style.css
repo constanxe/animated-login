@@ -175,16 +175,8 @@ input {
 
 @media (max-width: 500px) {
 
-#icon {
-  position: absolute;
-  top: 258px;
-  right: 33px;
-  width: 24px;
-  height: 24px;
-}
-
 .container {
-  width: 300px;
+  width: 340px;
   height: 480px;
   top: 35%;
 }
@@ -193,23 +185,40 @@ input {
   transition: all 0.2s;
 }
 
+#icon {
+  position: absolute;
+  top: 258px;
+  right: 33px;
+  width: 24px;
+  height: 24px;
+}
+.heading {
+  text-align: left;
+  padding-left: 30px;
+}
+.form-item {
+  width: 340px;
+}
+input {
+  width: 250px;
+} 
+
 .container-form .form-item .info-item {
   display: block;
   position: static;
   left: 0;
   top: 0px;
-  width: 100%;
+  width: 340px;
   height: 50%;
   opacity: 1;
-
-  transition: all 0.1s;
-  
   justify-content: left;
   font-size: 90%;
+
+  transition: all 0.1s;
 }
 .table-cell {
   text-align: left;
-  padding-left: 30px;
+  padding: 10px 30px;
 }
 
 /* style */
