@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Challenge 1 (Constance)</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="magic.js"></script>
+</head>
+<body>
+    <div class="container">
+
+
+        <div class="container-info">
+
+            <div class="info-item log-in">
+                <div class="table">
+                    <div class="table-cell">
+                        <h1>Hello There</h1>
+                        <p>Don't have an account?<br>Sign up with us today!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="info-item sign-up">
+                <div class="table">
+                    <div class="table-cell">
+                        <h1>Lets get you started</h1>
+                        <p>Be part of our awesome<br>team and have fun with us</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="container-form">
+
+            <form class="form-item login">
+                <table>
+                    <div class="heading">
+                        <h2>Sign in</h2>
+                    </div>
+
+                    <div class="form">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input name="email" placeholder="pigeon@nestcoop.com" type="email" class="form-control" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Password">Password</label>
+                            <input name="Password" placeholder="******" type="Password" minlength="6" class="form-control" required/>
+                        </div>
+
+                        <button type="submit" class="btn">Login</button>
+                    </div>
+
+                    <div class="swap">Create account</div>
+                </table>
+            </form>
+
+            <form class="form-item register">
+                <table>
+                    <div class="heading">
+                        <h2>Create Account</h2>
+                    </div>
+
+                    <div class="form">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input name="email" placeholder="pigeon@nestcoop.com" type="email" class="form-control" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Password">Password</label>
+                            <input name="Password" id="Password" placeholder="******" type="Password" minlength="6" class="form-control" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ConfirmPassword">Confirm Password</label>
+                            <input name="ConfirmPassword" id="ConfirmPassword" placeholder="******" type="Password" class="form-control"/>
+                        </div>
+
+                        <button type="submit" class="btn">Create</button>
+                    </div>
+
+                    <div class="swap">Already have an account?</div>
+                </table>
+            </div>
+
+        </form>
+
+
+    </div>
+</body>
+</html>
