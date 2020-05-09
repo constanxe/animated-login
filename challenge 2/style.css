@@ -48,11 +48,11 @@ body {
   width: 100%;
   height: 100%;
   opacity: 1;
-  transition: all 0.1s;
+  transition: all 0.0.7s;
 }
 .sign-up {
   opacity: 1;
-  transition: 0.3s;
+  transition: 0.7s;
   transition-delay: 0.05s;
 }
 .log-in {
@@ -71,7 +71,7 @@ body {
 .container.sign-up .container-info .info-item.sign-up {
   right: 0;
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.7s;
   transition-delay: 0.05s;
 }
 
@@ -234,55 +234,51 @@ input {
 .info-item.log-in {
   background-color: var(--primary-light);
   color: var(--dark);
-  transition: all 0.02s;
 }
 .info-item.sign-up {
   background-color: var(--secondary);
   color: var(--primary-dark);
   opacity: 0.9;
-  transition: all 0.02s;
 }
 
 
 /* transition */
 .container .container-form {
   transform: translateX(0);
-  transition: all 0.1s;
+  transition: all 0.3s;
+  transition-timing-function: ease-out;
 }
 .container .container-form .form-item.register {
-  visibility: visible;
-  transition: all 0.02s;
+  opacity: 1;
+  transition: all 0.7s;
+  transition-timing-function: ease-out;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 .container .container-form .form-item.login {
-  visibility: hidden;
-  transition: all 0.02s;
+  opacity: 0;
+  transition: all 0.7s;
 }
 
 .container.sign-up .container-form {
   transform: translateX(340px);
-  transition: all 0.1s;
+  transition: all 0.3s;
+  transition-timing-function: ease-out;
 }
 .container.sign-up .container-form .form-item.login {
-  visibility: visible;
-  transition: all 0.02s;
+  opacity: 1;
+  transition: all 0.7s;
+  transition-timing-function: ease-out;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 .container.sign-up .container-form .form-item.register {
-  visibility: hidden;
-  transition: all 0.02s;
+  opacity: 0;
+  transition: all 0.7s;
+  transition-timing-function: ease-out;
 }
 
 .form-item.blank {
-  visibility: hidden;
-  transition: all 0.02s;
-}
-
-.container .container-form .form-item.login .info-item {
-  visibility: hidden;
-}
-.container.sign-up .container-form .form-item.login .info-item {
-  visibility: visible;
+  opacity: 0;
+  transition: all 0.7s;
 }
 
 
