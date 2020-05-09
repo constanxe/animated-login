@@ -170,21 +170,8 @@ body {
 .container {
   width: auto;
   height: auto;  
-  top: auto;
-  margin-top: 40px;
-  left: -84%;
-}
-/* for iPh X */
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (orientation : portrait) { 
-  .container {
-  left: -91.5%;
-  }
-}
-/* for Pixel & iPhone 6/7/8 Plus*/
-@media only screen and (min-device-width : 411px) and (max-device-width : 736px) and (orientation : portrait) { 
-  .container {
-  left: -76%;
-  }
+  margin-top: -235px;
+  left: -320px;
 }
  
 .container-form .form-item .info-item {
@@ -242,6 +229,10 @@ input {
 }
 
 /* transition */
+.preload * {
+  transition: none !important;
+}
+
 .container .container-form {
   transform: translateX(0);
   transition: all 0.3s;

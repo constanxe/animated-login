@@ -5,6 +5,10 @@ $(document).ready(function() {
         $(".container").toggleClass("sign-up");
     });
 
+    $(window).load(function() {
+        $("body").removeClass("preload");
+    });
+
     // add password matching validation
     // https://codepen.io/diegoleme/pen/surIK
     var password = document.getElementById("Password")
