@@ -171,15 +171,21 @@ body {
   height: auto;  
   top: auto;
   margin-top: 40px;
-  left: -87.5%;
+  left: -84%;
+}
+/* for iPh X */
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (orientation : portrait) { 
+  .container {
+  left: -91.5%;
+  }
 }
 /* for Pixel & iPhone 6/7/8 Plus*/
 @media only screen and (min-device-width : 411px) and (max-device-width : 736px) and (orientation : portrait) { 
   .container {
-  left: -75%;
+  left: -76%;
   }
 }
-  
+ 
 .container-form .form-item .info-item {
   display: inline-block;
   position: static;
