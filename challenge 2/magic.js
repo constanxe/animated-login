@@ -1,12 +1,25 @@
 $(document).ready(function() {
 
+    // // center div for mobile
+    // var chg = function() {
+    //     var w = screen.width;
+    //     if (w <= 700) {
+    //         var left = (w-337)/2 -337*2
+    //         $(".container").css("left", left);
+    //     } 
+
+    //     // var h = screen.height;
+    //     // if (w <= 700) {
+    //     //     var top = (h-337)/2 -337*2
+    //     //     $(".container").css("left", left);
+    //     // } 
+    // };
+    // $(chg);
+    // $( window ).resize(chg);
+
     // animate
     $(".swap").click(function(){
         $(".container").toggleClass("sign-up");
-    });
-
-    $(window).load(function() {
-        $("body").removeClass("preload");
     });
 
     // add password matching validation
