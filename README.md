@@ -14,4 +14,4 @@ For the first 3 challenges, you may simply open `index.html` in each folder.
 
 ### Testing
 - `npm test`
-- `npm test -- --coverage` or open `coverage/lcov-report/index.html` ([example](challenge%204%20-%20vue,%20mobile%20responsive,%20test/coverage/lcov-report/index.html))
+- `npm test -- --coverage` or open `coverage/lcov-report/index.html` ([example](challenge%204%20-%20vue,%20responsive,%20test/coverage/lcov-report/index.html))
