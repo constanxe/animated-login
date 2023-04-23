@@ -8,13 +8,6 @@
     "build": "webpack",
     "dev": "webpack-dev-server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@gitlab.com:pigeonlab/misc/frontend-assignment-2.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
     "css-loader": "^3.5.0",
     "mini-css-extract-plugin": "^0.9.0",
