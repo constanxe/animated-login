@@ -1,11 +1,11 @@
-# Front-end Assignment
+# Animated Login - Vue
 
-## Install dependencies
-* `npm install`
+`npm install`
 
 ## Running in development
-* `npm run serve`
+`npm run serve`
 
 ## Testing
-* `npm test`
-* `npm test -- --coverage`
+`npm test -- --coverage`
+or
+open [coverage/lcov-report/index.html](coverage/lcov-report/index.html)
