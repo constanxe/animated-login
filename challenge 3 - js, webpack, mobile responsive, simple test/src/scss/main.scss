@@ -1,0 +1,212 @@
+$primary-light: #FFDCD4;
+$primary-dark: #E7AFA3;
+$secondary: #2F4456; 
+$breakpoint: 700px;
+
+html {
+    overflow: hidden;
+    font-family: sans-serif;  
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    @media (max-width: $breakpoint) {
+        margin-left: -50%;
+    }
+
+    &.sign-up {
+        .container-info { 
+            left: 0;
+
+            .info-item {
+                &.log-in {
+                    opacity: 0;
+                }
+                &.sign-up {
+                    opacity: 1;
+                }
+            }
+        }  
+
+        /* transition: sign up */
+        @media (max-width: $breakpoint) {
+            .container-form {
+                transform: translateX(340px);
+
+                .form-item {
+                    &.login {
+                        opacity: 1;
+                        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+                    }
+                    &.register {
+                        opacity: 0;
+                    }    
+                }        
+            }
+        }
+    }
+}
+
+/* info */
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.container-info {
+    position: absolute;
+    left: 300px;
+    width: 300px;
+    height: 380px;
+    background-color: $primary-light;
+    transition: all 0.2s;
+
+    @media (max-width: $breakpoint) {
+        display: none;
+    }
+}
+.info-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    @media (max-width: $breakpoint) {
+        &.log-in {
+            background-color: $primary-light;
+        }
+    }
+
+    &.sign-up {
+        background-color: $secondary;
+        color: $primary-light;
+        opacity: 0;
+
+        @media (max-width: $breakpoint) {
+            background-color: $secondary;
+            color: $primary-dark;
+            opacity: 0.9;           
+        }
+    }
+}
+
+/* form */
+.container-form {
+    width: 600px;
+    display: flex;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+
+    @media (max-width: $breakpoint) {
+        box-shadow: none;
+        left: -300px;
+
+        /* transition: log in */
+        transform: translateX(0);
+        transition: all 0.3s;
+        transition-timing-function: ease-out;  
+        
+        .form-item {
+            &.login {
+                opacity: 0;
+                transition: all 0.7s;                
+            }
+            &.register {
+                opacity: 1;
+                transition: all 0.3s;
+                transition-timing-function: ease-out;
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+            }
+        }            
+    } 
+
+    .info-item {
+        display: none;
+
+        @media (max-width: $breakpoint) {
+            display: block;
+            position: relative;
+            display: flex;
+            justify-content: left;
+            text-align: left;
+            padding: 10px 30px;
+            height: 140px;
+            width: 277px;
+            font-size: 90%;            
+        } 
+    }
+}
+
+.heading {
+    text-align: center;
+    padding-top: 10px;
+    height: 40px;
+
+    @media (max-width: $breakpoint) {
+        text-align: left;
+        padding-left: 30px;
+    }    
+}
+
+@mixin handle-component {
+    padding: 5px 12px;
+    cursor: pointer; 
+}
+input {
+    @include handle-component;
+    margin: 2px 0 10px;
+    width: 210px;
+    border-width: 0.5px;
+
+    @media (max-width: $breakpoint) {
+        width: 246px;
+    } 
+}
+.btn {
+    @include handle-component;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 18px;
+}
+
+@mixin handle-text {
+    font-size: 13px;
+    padding: 30px;
+    text-align: left;        
+}
+.swap {
+    @include handle-text;
+    background-color: transparent;
+    text-decoration-line: underline;
+    text-align: right;
+    cursor: pointer;
+}
+.form {
+    @include handle-text;
+    height: 140px;
+}
+
+.login {
+    .btn {
+        background-color: $primary-dark;
+    }
+    .swap:hover {
+        color: $primary-light;
+    }
+}
+.register {
+    .btn {
+        background-color: $secondary;
+    }
+    .swap:hover {
+        color: $secondary;
+        opacity: 0.6;        
+    }
+}

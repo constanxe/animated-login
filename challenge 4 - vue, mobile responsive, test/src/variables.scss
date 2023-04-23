@@ -1,0 +1,16 @@
+$primary-light: #FFDCD4;
+$primary-dark: #E7AFA3;
+$secondary: #2F4456;
+$breakpoint: 700px;
+
+
+@mixin handle-component {
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+@mixin handle-text {
+    font-size: 13px;
+    padding: 30px;
+    text-align: left;
+}

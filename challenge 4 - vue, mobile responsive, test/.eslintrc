@@ -1,0 +1,30 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "jest": true
+    },
+    "globals": {
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "extends": ["plugin:vue/base"],
+    "rules": {
+        "indent": ["warn", 4, {
+            "SwitchCase": 1
+        }],
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+        "no-console": ["error", {
+            "allow": ["warn", "error"]
+        }],
+        "comma-dangle": "off",
+        "brace-style": "error",
+        "keyword-spacing": ["warn", {
+            "after": true,
+            "before": true
+        }]
+    }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "frontend-assignment-2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "frontend-assignment-2",
+  "author": "",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "dev": "webpack-dev-server",
+    "test": "jest"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-eslint": "~4.4.0",
+    "@vue/cli-plugin-unit-jest": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "@vue/test-utils": "^1.0.3",
+    "babel-eslint": "^10.1.0",
+    "css-loader": "^3.5.0",
+    "eslint": "^7.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "_id": "frontend-assignment-2@1.0.0",
+  "engines": {
+    "node": "^12"
+  },
+  "license": "ISC",
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:pigeonlab/misc/frontend-assignment-2.git"
+  }
+}
