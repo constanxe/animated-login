@@ -1,7 +1,7 @@
 {
-  "name": "frontend-assignment-2",
+  "name": "animated-login",
   "version": "1.0.0",
-  "description": "frontend-assignment-2",
+  "description": "animated-login",
   "main": "index.js",
   "scripts": {
     "test": "jest",
