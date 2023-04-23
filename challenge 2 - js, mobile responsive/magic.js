@@ -6,13 +6,13 @@ $(document).ready(function() {
     //     if (w <= 700) {
     //         var left = (w-337)/2 -337*2
     //         $(".container").css("left", left);
-    //     } 
+    //     }
 
     //     // var h = screen.height;
     //     // if (w <= 700) {
     //     //     var top = (h-337)/2 -337*2
     //     //     $(".container").css("left", left);
-    //     // } 
+    //     // }
     // };
     // $(chg);
     // $( window ).resize(chg);

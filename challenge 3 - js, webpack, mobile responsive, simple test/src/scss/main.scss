@@ -1,11 +1,11 @@
 $primary-light: #FFDCD4;
 $primary-dark: #E7AFA3;
-$secondary: #2F4456; 
+$secondary: #2F4456;
 $breakpoint: 700px;
 
 html {
     overflow: hidden;
-    font-family: sans-serif;  
+    font-family: sans-serif;
 }
 .container {
     display: flex;
@@ -19,7 +19,7 @@ html {
     }
 
     &.sign-up {
-        .container-info { 
+        .container-info {
             left: 0;
 
             .info-item {
@@ -30,7 +30,7 @@ html {
                     opacity: 1;
                 }
             }
-        }  
+        }
 
         /* transition: sign up */
         @media (max-width: $breakpoint) {
@@ -44,8 +44,8 @@ html {
                     }
                     &.register {
                         opacity: 0;
-                    }    
-                }        
+                    }
+                }
             }
         }
     }
@@ -77,7 +77,7 @@ html {
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+
     @media (max-width: $breakpoint) {
         &.log-in {
             background-color: $primary-light;
@@ -92,7 +92,7 @@ html {
         @media (max-width: $breakpoint) {
             background-color: $secondary;
             color: $primary-dark;
-            opacity: 0.9;           
+            opacity: 0.9;
         }
     }
 }
@@ -110,12 +110,12 @@ html {
         /* transition: log in */
         transform: translateX(0);
         transition: all 0.3s;
-        transition-timing-function: ease-out;  
-        
+        transition-timing-function: ease-out;
+
         .form-item {
             &.login {
                 opacity: 0;
-                transition: all 0.7s;                
+                transition: all 0.7s;
             }
             &.register {
                 opacity: 1;
@@ -123,8 +123,8 @@ html {
                 transition-timing-function: ease-out;
                 box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
             }
-        }            
-    } 
+        }
+    }
 
     .info-item {
         display: none;
@@ -138,8 +138,8 @@ html {
             padding: 10px 30px;
             height: 140px;
             width: 277px;
-            font-size: 90%;            
-        } 
+            font-size: 90%;
+        }
     }
 }
 
@@ -151,12 +151,12 @@ html {
     @media (max-width: $breakpoint) {
         text-align: left;
         padding-left: 30px;
-    }    
+    }
 }
 
 @mixin handle-component {
     padding: 5px 12px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 input {
     @include handle-component;
@@ -166,7 +166,7 @@ input {
 
     @media (max-width: $breakpoint) {
         width: 246px;
-    } 
+    }
 }
 .btn {
     @include handle-component;
@@ -179,7 +179,7 @@ input {
 @mixin handle-text {
     font-size: 13px;
     padding: 30px;
-    text-align: left;        
+    text-align: left;
 }
 .swap {
     @include handle-text;
@@ -207,6 +207,6 @@ input {
     }
     .swap:hover {
         color: $secondary;
-        opacity: 0.6;        
+        opacity: 0.6;
     }
 }

@@ -19,6 +19,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 .wrapper {
     position: relative;
     display: flex;
@@ -36,4 +37,5 @@ export default {
         display: none;
     }
 }
+
 </style>

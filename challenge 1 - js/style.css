@@ -2,7 +2,7 @@
     --basic: #fff;
     --primary-light: #FFDCD4;
     --primary-dark: #E7AFA3;
-    --secondary: #2F4456;    
+    --secondary: #2F4456;
 }
 body {
   position: absolute;
@@ -60,7 +60,7 @@ body {
   color: var(--primary-light);
 }
 
-.container.sign-up .container-info { 
+.container.sign-up .container-info {
   left: 0;
 }
 .container.sign-up .container-info .info-item.log-in {
@@ -113,7 +113,7 @@ body {
   font-size: 13px;
   padding: 30px;
   text-align: left;
-}  
+}
 
 input, .btn {
   padding: 5px 12px;

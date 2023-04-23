@@ -5,4 +5,3 @@ module.exports = {
       "**/?(*.)+(spec|test).[jt]s?(x)"
     ]
 }
-  

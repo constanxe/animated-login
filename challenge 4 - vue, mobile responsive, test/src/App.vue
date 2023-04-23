@@ -49,7 +49,7 @@ html {
 
     &.active {
         @media (min-width: $breakpoint) {
-            .container-info { 
+            .container-info {
                 left: 0;
 
                 .info-item {

@@ -7,8 +7,7 @@ $(document).ready(function() {
 
     // add password matching validation
     // https://codepen.io/diegoleme/pen/surIK
-    var password = document.getElementById("Password")
-    , confirm_password = document.getElementById("ConfirmPassword");
+    var password = document.getElementById("Password"), confirm_password = document.getElementById("ConfirmPassword");
     function validatePassword(){
         if(password.value != confirm_password.value) {
             confirm_password.setCustomValidity("password does not match");
